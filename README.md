@@ -1,0 +1,3 @@
+# mug
+
+> mug Jekyll theme
