@@ -1,0 +1,18 @@
+
+<div class="clearfix"></div>
+
+<footer class="site-footer txt-center">
+  <hr>
+
+  <ul class="social">
+    {% for item in site.social %}
+      {% for i in item %}
+        <li><a href="{{ i.link }}" target="_blank"><i class="icon icon-{{ i.slug }}"></i></a></li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+  <small>&copy; {{ site.time | date: '%Y' }} All rights reserved. Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <i class="icon icon-heart"></i></small>
+  <small>by <a href="http://nandomoreira.me" target="_blank">nandomoreira.me</a></small>
+
+</footer>

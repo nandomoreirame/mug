@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+bodyclass: home
+---
+
+<section class="posts txt-center container">
+
+  {% for post in paginator.posts %}
+    {% include article.html %}
+  {% endfor %}
+
+  {% include pagination.html %}
+
+</section>
+

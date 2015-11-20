@@ -1,0 +1,57 @@
+{% comment %}
+  page_title
+{% endcomment %}
+{% assign page_title = '' %}
+{% if page.title == "Home" %}{% capture page_title %}{{ site.title }} | {{ site.description }}{%if paginator and paginator.page != 1 %} - Página {{ paginator.page }}{% endif %}{% endcapture %}{% else %}{% capture page_title %}{%if page.slug == 'category' %}Categoria: {% endif %}{%if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.title }}{% endcapture %}{% endif %}
+{% capture page_title %}{{ page_title | strip | rstrip | lstrip | escape | strip_newlines }}{% endcapture %}
+
+{% comment %}
+  page_description
+{% endcomment %}
+{% assign page_description = '' %}
+{% capture page_description %}{% if page.description %}{{ page.description | strip_html | strip | rstrip | strip_newlines | truncate: 160 }}{% else %}{{ site.meta_description }}{% endif %}{%if paginator and paginator.page != 1 %} - Página {{ paginator.page }} {% endif %}{%if page.slug == 'category' %} Categoria: {{ page.title }}{% endif %}{%if page.slug == 'tag' %} Tag: {{ page.title }}{% endif %}{% endcapture %}
+{% capture page_description %}{{ page_description | strip | rstrip | lstrip | escape | strip_newlines }}{% endcapture %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page_title }}</title>
+
+<meta name="description" content="{{ page_description }}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.meta_keywords }}{% endif %}">
+
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="theme-color" content="#2ecc71">
+
+{% comment %}
+  rel paginator previous page
+{% endcomment %}
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+
+{% comment %}
+  rel paginator next page
+{% endcomment %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>

@@ -1,0 +1,22 @@
+
+<article class="post">
+
+  {% if post.external_url %}
+    <header class="post-header">
+      <h1>
+        <a class="post-link" href="{{ post.external_url  }}" target="_blank" title="Permalink to: {{ post.title }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}"><i class="icon icon-link"></i></a>
+      </h1>
+    </header>
+  {% else %}
+    <h1>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">{{ post.title }}</a>
+    </h1>
+    <span class="post-meta">
+      <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </span>
+    <p>{{ post.content | strip_html | truncatewords: 30 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more &raquo;</a></p>
+  {% endif %}
+
+
+</article>

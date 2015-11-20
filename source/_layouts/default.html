@@ -1,0 +1,40 @@
+{% strip %}<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+    <meta name="robots" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
+    <meta name="googlebot" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
+  </head>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+
+    <main class="main-container">
+
+        {% include header.html %}
+
+        <section class="main-content">
+          {{ content }}
+        </section>
+
+        {% include footer.html %}
+
+    </main>
+
+    {% include github-corner.html %}
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/js/jekyll-search.min.js' | prepend: site.baseurl }}"></script>
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ "/search.json" | prepend: site.baseurl }}',
+        searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+        noResultsText: '<li class="no-results">No results found :(</li>',
+        limit: 10,
+        fuzzy: false
+      })
+    </script>
+  </body>
+</html>{% endstrip %}
