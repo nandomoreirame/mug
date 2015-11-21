@@ -5,6 +5,17 @@ Jekyll theme
 > :warning:
   This theme requires ruby and rubygems installed
 
+* [x] Clean layout
+* [x] Resposive layout
+* [x] Preprocessor SASS
+* [x] CSS minified
+* [x] Search posts
+* [x] Pagination
+* [x] Syntax highlight
+* [x] Author config
+* [x] Share posts
+* [x] Comments with Disqus
+
 ---
 
 ### Start in 4 steps

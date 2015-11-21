@@ -5,8 +5,7 @@ date: 2015-11-12 16:41:50
 comments: true
 description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
 keywords: ""
-categories:
-- welcome
+category: welcome
 tags:
 - welcome
 ---

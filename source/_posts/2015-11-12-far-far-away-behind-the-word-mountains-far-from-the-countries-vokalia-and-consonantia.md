@@ -5,8 +5,7 @@ date: 2015-11-12 16:38:20
 comments: true
 description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
 keywords: ""
-categories:
-- welcome
+category: welcome
 tags:
 - welcome
 ---

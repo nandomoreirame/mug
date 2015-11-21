@@ -30,17 +30,12 @@
 }
 
 .input {
-  transition: background-color .2s linear, color .2s linear, border-color .2s linear;
-  background-color: $white-color;
   border-radius: 4px;
   box-shadow: none;
   border: 2px solid lighten($silver-color, 6%);
   color: $txt-color;
   display: inline-block;
-  font-weight: 400;
-  line-height: 2.6em;
   width: 100%;
-  padding: 0 1.6em;
 
   &:focus,
   &:active {
@@ -90,6 +85,20 @@
 
   .input {
     text-align: center;
+    font-weight: 400;
+    line-height: 2.5em;
+    padding: 0 2.4em;
+  }
+
+  .icon {
+    position: absolute;
+    color: rgba($primary-color, .7);
+    right: 20px;
+    top: 15px;
+  }
+
+  .no-results {
+    color: #f00;
   }
 }
 
@@ -153,12 +162,15 @@
 /**
  * Site Header
  */
-
-.site-header {
+.site-header,
+.site-footer {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.site-header {
   border-top: 5px solid $black-color;
   padding: {
     top: 1.4em;
@@ -297,9 +309,22 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
     margin-bottom: .3em;
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: lighten($primary-color, 10%);
+    }
+  }
+
+  .post-meta {
+    display: block;
+    margin-bottom: 1em;
+  }
+
   &:after {
     content: '';
-
     @extend .hr;
   }
 }
@@ -317,7 +342,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 .posts {
   .post {
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -328,11 +353,14 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 }
 
 .site-footer {
-  padding: 1.6em 0 2em;
+  padding: 0 0 2em;
   margin-top: 1.5em;
 
+  small, a {
+    color: rgba($white-color, .75);
+  }
+
   small {
-    color: #aaa;
     font-size: .8em;
     display: block;
   }

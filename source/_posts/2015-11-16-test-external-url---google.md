@@ -7,8 +7,7 @@ comments: true
 external_url: http://nandomoreira.me/
 description: "Test external-url"
 keywords: "test, external, url"
-categories:
-- jekyll
+category: jekyll
 tags:
 - text
 - jekyll
