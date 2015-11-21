@@ -17,9 +17,9 @@ cover: /assets/images/default-cover.png
 # site title, description, meta_description, meta_keywords
 # Details for the RSS feed generator
 name: Mug Jekyll theme
-title: Mug | Jekyll theme..
-description: ""
-keywords: ""
+title: Mug
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, mug, free, download, SEO, blog, web"
 url: http://nandomoreira.me
 baseurl: ""
 domain_name: nandomoreira.me

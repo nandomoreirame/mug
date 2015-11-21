@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+description: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
 date: 2015-11-12 16:38:20
 comments: true
-description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
-keywords: ""
+keywords: "welcome, Far, far, away"
 category: welcome
 tags:
 - welcome
