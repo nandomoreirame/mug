@@ -1,0 +1,59 @@
+[
+  
+    {
+      "title"    : "Test external url",
+      "category" : "jekyll",
+      "tags"     : "text, jekyll, and external-url",
+      "url"      : "/mug/test-external-url",
+      "date"     : "2015-11-16 13:51:23 -0200"
+    } ,
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "category" : "jekyll update",
+      "tags"     : "",
+      "url"      : "/mug/jekyll%20update/2015/welcome-to-jekyll/",
+      "date"     : "2015-11-12 17:19:43 -0200"
+    } ,
+  
+    {
+      "title"    : "Lorem ipsum dolor sit amet",
+      "category" : "welcome",
+      "tags"     : "",
+      "url"      : "/mug/welcome/2015/lorem/",
+      "date"     : "2015-11-12 17:19:43 -0200"
+    } ,
+  
+    {
+      "title"    : "The quick, brown fox jumps over a lazy dog",
+      "category" : "welcome",
+      "tags"     : "welcome",
+      "url"      : "/mug/welcome/2015/the-quick-brown-fox-jumps-over-a-lazy-dog/",
+      "date"     : "2015-11-12 14:42:24 -0200"
+    } ,
+  
+    {
+      "title"    : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "category" : "welcome",
+      "tags"     : "welcome",
+      "url"      : "/mug/welcome/2015/lorem-ipsum-dolor-sit-amet-consectetuer-adipiscing-elit/",
+      "date"     : "2015-11-12 14:41:50 -0200"
+    } ,
+  
+    {
+      "title"    : "A wonderful serenity has taken possession of my entire soul",
+      "category" : "welcome",
+      "tags"     : "welcome",
+      "url"      : "/mug/welcome/2015/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/",
+      "date"     : "2015-11-12 14:39:18 -0200"
+    } ,
+  
+    {
+      "title"    : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+      "category" : "welcome",
+      "tags"     : "welcome",
+      "url"      : "/mug/welcome/2015/far-far-away-behind-the-word-mountains-far-from-the-countries-vokalia-and-consonantia/",
+      "date"     : "2015-11-12 14:38:20 -0200"
+    } 
+  
+]
