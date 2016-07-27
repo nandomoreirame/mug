@@ -43,7 +43,7 @@ Access, [localhost:4000/mug](http://localhost:4000/mug)
 
 ### Demo and Download
 
-[Demo](https://github.nandomoreira.me/mug/)
+[Demo](https://nandomoreira.me/mug/)
 [Download](https://github.com/nandomoreirame/mug/archive/master.zip)
 
 ![mug - free Jekyll theme](/screenshot.png)
